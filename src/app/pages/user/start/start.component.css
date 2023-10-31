@@ -1,0 +1,84 @@
+/* Add this CSS to your styles.css or a separate CSS file */
+.result-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .result-container {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .result-card {
+    text-align: center;
+  }
+  
+  .result-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .result-score {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .result-congrats {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .result-progress {
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .result-progress-bar {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .result-stats {
+    font-size: 16px;
+  }
+  
+  .result-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .result-exit {
+    background-color: #dc3545;
+  }
+  
+  .result-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .result-button.result-exit:hover {
+    background-color: #c82333;
+  }
+  .truncate{
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

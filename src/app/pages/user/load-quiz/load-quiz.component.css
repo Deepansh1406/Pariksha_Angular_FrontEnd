@@ -1,0 +1,21 @@
+.truncate{
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.example-header-image {
+    background-image: url("/assets/quizImage.png");
+    background-size: cover;
+  }
+  .black-card {
+    background: linear-gradient(135deg, #ff6b6b, #3a1c71);
+    color: #fff;
+  }
+  /* Add hover effect to the card */
+.mat-card:hover {
+    background-color: #333; /* Darker background on hover */
+    transform: scale(1.02); /* Slight scale-up effect on hover */
+  }
+  

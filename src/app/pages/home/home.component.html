@@ -1,0 +1,60 @@
+<div class="bootstrap-wrapper">
+    <div class="container text-center">
+        <div class="row mt20">
+            <!-- Your existing content goes here -->
+
+            <!-- Image Slider with Navigation Arrows -->
+            <div class="image-slider">
+                <!-- Left Arrow -->
+                <div class="arrow arrow-left" (click)="prevSlide()">&#10094;</div>
+
+                <!-- Slides -->
+                <div class="slides" [style.transform]="'translateX(' + translateValue + ')'">
+                    <div class="slide" *ngFor="let image of images">
+                        <img [src]="image" alt="Image">
+                    </div>
+                </div>
+
+                <!-- Right Arrow -->
+                <div class="arrow arrow-right" (click)="nextSlide()">&#10095;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="bootstrap-wrapper">
+                <div class="container-fluid">
+                    <h1 class="mt20 text-center">Trending Courses</h1>
+                    <div class="row">
+                        <div class="col-md-4 " *ngFor="let c of cards">
+                            <mat-card class="mb20">
+                                <mat-card-header>
+                                    <div mat-card-avatar class="example-header-image"></div>
+                                    <mat-card-title>
+                                        <h1 class="truncate">{{c.title}}</h1>
+                                    </mat-card-title>
+                                    <mat-card-subtitle class="mt10 mb10">
+                                        {{c.subtitle}}
+                                    </mat-card-subtitle>
+                                </mat-card-header>
+                                <img mat-card-image src="{{c.imageSrc}}" class="imagee" alt="Photo of a Shiba Inu">
+                                <mat-card-content class="mt20">
+                                    <p class="truncate">{{c.content}}</p>
+
+                                </mat-card-content>
+                                <mat-card-actions>
+                                    <button mat-button>LIKE</button>
+                                    <button mat-button>SHARE</button>
+                                </mat-card-actions>
+
+                            </mat-card>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- More of your existing content goes here -->
+       
+
+    

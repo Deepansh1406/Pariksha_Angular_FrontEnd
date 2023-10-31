@@ -1,0 +1,13 @@
+.full-width{
+    width:100%;
+}
+.password-input {
+    display: flex;
+    align-items: center; /* Vertically center the button */
+  }
+  
+  /* You can add additional styling if needed */
+  .password-input input {
+    flex-grow: 1; /* Allow the input to grow and take available space */
+  }
+  
